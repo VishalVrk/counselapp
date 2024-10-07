@@ -18,8 +18,5 @@ commands = [
   "pip install -r requirements.txt"
 ]
 
-[phases.build]
-commands = []
-
-[phases.start]
-commands = ["gunicorn app:app --bind 0.0.0.0:${PORT}"]
+[start]
+cmd = "gunicorn app:app --bind 0.0.0.0:${PORT}"
