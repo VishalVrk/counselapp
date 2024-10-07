@@ -1,0 +1,6 @@
+Flask
+faiss-cpu
+sentence-transformers
+pandas
+gradio-client
+Flask-Cors
