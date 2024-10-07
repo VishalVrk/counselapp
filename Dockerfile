@@ -28,4 +28,4 @@ COPY . .
 EXPOSE ${PORT}
 
 # Start the application
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:${PORT}"]
+CMD ["python", "app.py"]
