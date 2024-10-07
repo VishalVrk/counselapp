@@ -107,6 +107,10 @@ def ask_audio_question():
     
     return jsonify(response)
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Hello we are live"
+
 # Start the Flask app
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5005)
